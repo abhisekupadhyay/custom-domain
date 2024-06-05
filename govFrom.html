@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        form
+    </title>
+    <style>
+        form {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <form>
+            <table width="100%">
+                <table width="100%">
+                    <colgroup>
+                        <col width="10%">
+                        <col width="28%">
+                        <col width="28%">
+                        <col width="28%">
+                    </colgroup>
+                    <tr>
+                        <td><label for="title">Title</label></td>
+                        <td><label for="f_name">First Name</label></td>
+                        <td><label for="m_name">Middle Name</label></td>
+                        <td><label for="l_name">Last Name</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="title" id="title" required>
+                                <option value="mr">Mr.</option>
+                                <option value="ms">Ms.</option>
+                                <option value="mrs">Mrs.</option>
+                            </select>
+                        </td>
+                        <td><input type="text" id="fName" name="fName" required></td>
+                        <td><input type="text" id="mName" name="mName" required></td>
+                        <td><input type="text" id="lName" name="lName" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <input type="radio" name="gender" id="male" value="male"> Male
+                            <input type="radio" name="gender" id="female" value="female"> Female
+                            <input type="radio" name="gender" id="other" value="other"> Other
+                            <input type="text" id="otherText" name="otherText" placeholder="Specify">
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%">
+                    <colgroup>
+                        <col width="50%">
+                        <col width="50%">
+                    </colgroup>
+                    <tr>
+                        <td colspan="2"><label for="grandFatherName">Grandfather's Name</label></td>
+                        <td colspan="2"><label for="FatherName">Father's Name</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="grandFatherName" name="grandFatherName" size="35"
+                                required>
+                        </td>
+                        <td colspan="2"><input type="text" id="FatherName" name="FatherName" size="35" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="mothersName">Mother's Name</label></td>
+                        <td colspan="2"><label for="mothersName">Spouce's Name</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="mothersName" name="mothersName" size="35" required></td>
+                        <td colspan="2"><input type="text" id="spouceName" name="spouceName" size="35" required></td>
+                    </tr>
+                </table>
+                <table width="100%">
+                    <colgroup>
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                    </colgroup>
+                    <tr>
+                        <td>
+                            <label for="nationality">Nationality</label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td><label for="citizenship">Citizenship no</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="nationality" id="nationality" required>
+                                <option value="afghanistan">Afghanistan</option>
+                                <option value="australia">Australia</option>
+                                <option value="brazil">Brazil</option>
+                                <option value="canada">Canada</option>
+                                <option value="china">China</option>
+                                <option value="denmark">Denmark</option>
+                                <option value="egypt">Egypt</option>
+                                <option value="france">France</option>
+                                <option value="germany">Germany</option>
+                                <option value="hungary">Hungary</option>
+                                <option value="india">India</option>
+                                <option value="ireland">Ireland</option>
+                                <option value="japan">Japan</option>
+                                <option value="kenya">Kenya</option>
+                                <option value="lebanon">Lebanon</option>
+                                <option value="mexico">Mexico</option>
+                                <option value="netherlands">Netherlands</option>
+                                <option value="nepal">Nepal</option>
+                                <option value="oman">Oman</option>
+                                <option value="pakistan">Pakistan</option>
+                                <option value="qatar">Qatar</option>
+                                <option value="russia">Russia</option>
+                                <option value="spain">Spain</option>
+                                <option value="turkey">Turkey</option>
+                                <option value="united_kingdom">United Kingdom</option>
+                                <option value="vietnam">Vietnam</option>
+                                <option value="zimbabwe">Zimbabwe</option>
+
+
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="text" id="citizenship" name="citizenship" size="35" required></td>
+                    </tr>
+                </table>
+                <table width="100%">
+                    <colgroup>
+                        <col width="40%">
+                        <col width="40%">
+                        <col width="40%">
+                    </colgroup>
+                    <tr>
+                        <td><label for="identification">identification</td>
+                        <td><label for="dob">Date of Birth</label></td>
+                        <td><label for="passport_no">Passport No</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="identification" id="citizen" value="citizen" required>
+                            <label for="citizen">Citizenship</label>
+                            <input type="radio" name="identification" id="passport" value="passport" required>
+                            <label for="passport">Passport</label>
+                        <td>
+                            <select name="dob_day" id="dob_day" required>
+                                <option value="">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                            </select>
+                            <select name="dob_month" id="dob_month" required>
+                                <option value="">Month</option>
+                                <option value="january">JAN</option>
+                                <option value="february">FEB</option>
+                                <option value="march">MAR</option>
+                                <option value="april">APR</option>
+                                <option value="may">MAY</option>
+                                <option value="june">JUN</option>
+                                <option value="july">JUL</option>
+                                <option value="august">AUG</option>
+                                <option value="september">SEP</option>
+                                <option value="october">OCT</option>
+                                <option value="november">NOV</option>
+                                <option value="december">DEC</option>
+                            </select>
+                            <select name="dob_year" id="dob_year" required>
+                                <option value="">Year</option>
+                                <option value="1980">1980</option>
+                                <option value="1981">1981</option>
+                                <option value="1982">1982</option>
+                                <option value="1983">1983</option>
+                                <option value="1984">1984</option>
+                                <option value="1985">1985</option>
+                                <option value="1986">1986</option>
+                                <option value="1987">1987</option>
+                                <option value="1988">1988</option>
+                                <option value="1989">1989</option>
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
+                                <option value="1993">1993</option>
+                                <option value="1994">1994</option>
+                                <option value="1995">1995</option>
+                                <option value="1996">1996</option>
+                                <option value="1997">1997</option>
+                                <option value="1998">1998</option>
+                                <option value="1999">1999</option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </td>
+                        <td><input type="text" id="passport" name="passport" required></td>
+                    </tr>
+                </table>
+                <table width="100%">
+                    <colgroup>
+                        <col width="50%">
+                        <col width="50%">
+                    </colgroup>
+                    <tr>
+                        <td colspan="2"><label for="mobile">Mobile</label></td>
+                        <td colspan="2"><label for="email">Email Address</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="mobile" name="mobile" size="35" required></td>
+                        <td colspan="2"><input type="text" id="email" name="email" size="35" required></td>
+                    </tr>
+                </table>
+                <table width="100%">
+                    <colgroup>
+                        <col width="40%">
+                        <col width="40%">
+                        <col width="40%">
+                    </colgroup>
+                    <tr>
+                        <td><label for="houseNo">House Number/Block</label></td>
+                        <td><label for="tole">Tole</label></td>
+                        <td><label for="wardNo">Ward Number</label></td>
+                    </tr>
+                    <tr>
+                        <th><input type="text" name="houseNo" id="houseNo" size="30" required></th>
+                        <th><input type="text" name="tole" id="tole" size="20" required></th>
+                        <th><input type="text" name="ward" id="ward" size="20" required></th>
+                    </tr>
+                </table>
+                <table width="100%">
+                    <colgroup>
+                        <col width="60%">
+                        <col width="40%">
+                    </colgroup>
+                    <tr>
+                        <td><label for="city2">City</label></td>
+                        <td><label for="country2">Country</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="city2" id="city2" size="45" required></td>
+                        <td>
+                            <select name="country2" id="country2" required>
+                                <option value="afghanistan">Afghanistan</option>
+                                <option value="australia">Australia</option>
+                                <option value="brazil">Brazil</option>
+                                <option value="canada">Canada</option>
+                                <option value="china">China</option>
+                                <option value="denmark">Denmark</option>
+                                <option value="egypt">Egypt</option>
+                                <option value="france">France</option>
+                                <option value="germany">Germany</option>
+                                <option value="hungary">Hungary</option>
+                                <option value="india">India</option>
+                                <option value="ireland">Ireland</option>
+                                <option value="japan">Japan</option>
+                                <option value="kenya">Kenya</option>
+                                <option value="lebanon">Lebanon</option>
+                                <option value="mexico">Mexico</option>
+                                <option value="netherlands">Netherlands</option>
+                                <option value="nepal">Nepal</option>
+                                <option value="oman">Oman</option>
+                                <option value="pakistan">Pakistan</option>
+                                <option value="qatar">Qatar</option>
+                                <option value="russia">Russia</option>
+                                <option value="spain">Spain</option>
+                                <option value="turkey">Turkey</option>
+                                <option value="united_kingdom">United Kingdom</option>
+                                <option value="vietnam">Vietnam</option>
+                                <option value="zimbabwe">Zimbabwe</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%">
+                    <colgroup>
+                        <col width="50%">
+                        <col width="50%">
+                    </colgroup>
+                    <tr>
+                        <td colspan="2"><label for="landmark">Nearest Landmark</label></td>
+                        <td colspan="2"><label for="no_of_yrs">Number of years at current address</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="landmark" name="landmark" size="35" required></td>
+                        <td colspan="2"><input type="text" id="no_of_yrs" name="no_of_yrs" size="35" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="mailingAddress">Mailing Address</label></td>
+                        <td colspan="2"><label for="permanentAddress">Permanent Address</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="mailingAddress" name="mailingAddress" size="35" required>
+                        </td>
+                        <td colspan="2"><input type="text" id="permanentAddress" name="permanentAddress" size="35"
+                                required>
+                        </td>
+                    </tr>
+                </table>
+            </table>
+            <center><br>
+                <button style="width: 10%; height: 40px; background-color:rgb(0, 153, 0);">
+                    Submit
+                </button>
+            </center>
+        </form>
+    </center>
+</body>
+
+</html>
